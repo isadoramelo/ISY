@@ -27,13 +27,20 @@ h3{
 	font-family:sans-serif; 
 	font-size: 18px;
 }
-img{
+#imgm{
 
 	width: 350px;
 	margin-left: auto;
     margin-right: auto;
     display: block;
 
+}
+#imge{
+
+	width: 80px;
+	margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 #box1{
@@ -60,3 +67,55 @@ img{
  	margin-left: 50px;
  	margin-right: 50px;
  }
+#rodape{
+ 	align-items: center;
+	height: 120px;
+	width: 100%;
+	background-color: #BBA2B9;
+ }
+
+ video{
+    width: 700px;
+    margin: 10 auto;
+    display: block;
+}
+
+#textoR{
+	text-align: center;
+	color:#FDF0FC;
+	
+
+}
+
+#rodape a{
+	text-decoration: none;
+	
+}
+
+.conta{
+	background-color:#F3E2F4;
+}
+
+.conta input{
+	width: 60%;
+	margin: auto;
+}
+
+.conta label{
+	margin: auto;
+	text-align: center;
+}
+
+.conta button{
+	margin: auto;
+	background-color: #BBA2B9;
+	border-color:#BBA2B9;
+}	
+
+.conta button:hover{
+	background-color: #F3E2F4;
+}		
+
+#link{
+	color: #BBA2B9;
+}
