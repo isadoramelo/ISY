@@ -1,3 +1,7 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
 body{
 	background-color:#F3E2F4;
 	background-size: 100%;
@@ -12,7 +16,13 @@ h1{
 	font-size: 60px;
 }
 
+.menu ul li{
+	text-decoration: none;
+}
 
+.menu li{
+	margin:0px 10px;
+}
 
 h2{
 	text-align: center;
@@ -43,23 +53,30 @@ h3{
     display: block;
 }
 
-#box1{
-	align-items: center;
+.menu{
 	height: 200px;
 	width: 100%;
 	background-color: #BBA2B9;
+	margin: auto;
+	display: inline-block;
 
  }
 
+ .nav-link{
+ 	color:#FDF0FC;
+ }
 
- #botao{
+.titulo{
+	background-color: #BBA2B9;
+}
+ .botao{
  	text-align: center;
- 	padding: 20px 30px;
+ 	padding: 10px 30px;
     background-color:#BBA2B9;
     font-family:sans-serif;
     font-size: 15px;
     color:#FDF0FC;
-    border-color: #BBA2B9;
+    border-color: #BBA2B9 black #BBA2B9 black;
     border-radius: 30px;
  }
   
@@ -118,4 +135,7 @@ h3{
 
 #link{
 	color: #BBA2B9;
+}
+form-control{
+	align-items: center;
 }
