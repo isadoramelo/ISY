@@ -64,7 +64,7 @@ h3 {
 
 .titulo {
   font-family: sans-serif;
-  font-size: 30px;
+  font-size: 40px;
   color: #fdf0fc;
   text-align: center;
   background-color: #bba2b9;
@@ -83,9 +83,21 @@ h3 {
   color: #fdf0fc;
   border-style: solid;
   border-width: 2px;
-  border-color: #bba2b9 black black #bba2b9;
+  border-color: #bba2b9 #747474 #747474 #bba2b9;
   border-radius: 30px;
 }
+.botao {
+  transition-duration: 0.3s;
+}
+
+.botao:hover {
+  background-color: #9D7C9A; 
+}
+
+.botao a:hover{
+  color: white;
+}
+
 
 #box2 {
   margin-left: 50px;
