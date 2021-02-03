@@ -17,12 +17,24 @@ h1 {
   background-color: #bba2b9;
 }
 
+.menu{
+  background-color: #bba2b9;
+}
+
 .menu ul li {
   text-decoration: none;
 }
 
 .menu li {
   margin: 0px 10px;
+}
+
+.menu .navbar-default {
+  background-color: #bba2b9;
+}
+
+.navbar-default .navbar-collapse{
+  margin: 10px 0px;
 }
 
 h2 {
@@ -51,11 +63,11 @@ h3 {
 }
 
 .menu {
-  height: 100px;
+  /* height: 100px; */
   width: 100%;
   background-color: #bba2b9;
   margin: auto;
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 .nav-link {
@@ -77,7 +89,7 @@ h3 {
 
 .botao {
   text-align: center;
-  padding: 10px 30px;
+  /* padding: 10px 30px; */
   font-family: sans-serif;
   font-size: 15px;
   color: #fdf0fc;
@@ -86,6 +98,7 @@ h3 {
   border-color: #bba2b9 #747474 #747474 #bba2b9;
   border-radius: 30px;
 }
+
 .botao {
   transition-duration: 0.3s;
 }
