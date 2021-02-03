@@ -110,7 +110,14 @@ h3 {
 .botao a:hover{
   color: white;
 }
+#box1{
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  background-color: #BBA2B9;
 
+ }
+  
 
 #box2 {
   margin-left: 50px;
@@ -125,7 +132,7 @@ h3 {
 
 video {
   width: 700px;
-  margin: 10 auto;
+  margin: 10px auto;
   display: block;
 }
 
