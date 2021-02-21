@@ -8,6 +8,10 @@ body {
   background-color: #fdf0fc !important;
 }
 
+.icone{
+  height: 60px;
+}
+
 /* Titulo */
 
 .titulo {
@@ -41,12 +45,6 @@ h2 {
   font-size: 30px;
 }
 
-h3 {
-  text-align: center;
-  color: #747474;
-  font-family: sans-serif;
-  font-size: 18px;
-}
 
 /* Menu */
 
@@ -75,6 +73,7 @@ li {
 
 .navbar button{
   border: #f3e2f4 1px solid;
+
 }
 
 .navbar-toggler-icon{
@@ -135,15 +134,22 @@ li {
   background-color: #bba2b9;
 }
 
-video {
+.video {
   width: 700px;
-  margin: 10 auto;
+  margin: 20px auto;
   display: block;
 }
 
 #textoR {
   text-align: center;
   color: #fdf0fc;
+}
+.texto_contato{
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+
 }
 
 #rodape a {
@@ -177,4 +183,17 @@ video {
 
 form-control {
   align-items: center;
+}
+
+.texto_padrao {
+  text-align: center;
+  color: #747474;
+  font-family: sans-serif;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+mark{
+  background-color:#A888A6;
+  color:#4F4F4F;
 }
