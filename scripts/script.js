@@ -5,14 +5,10 @@ function enviaformulario(evento){
 	console.log ("Cheguei na função");*/
 	let nome=document.getElementById("nome").value;
 	alert(nome);
-}
-{
-
 	let idade=document.getElementById("idade").value;
 	alert(idade);
-}
 	let email=document.getElementById("email").value;
 	alert(email);
-
 	let senha=document.getElementById("senha").value;
 	alert(senha);
+}
