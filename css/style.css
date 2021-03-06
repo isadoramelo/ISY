@@ -203,3 +203,8 @@ li {
     background-color:#A888A6 !important;
     color:#4F4F4F !important;
   }
+  
+  .img-thumbnail{
+    border-radius: 10px !important;
+    border: 2px solid #BBA2B9 !important;
+  }
