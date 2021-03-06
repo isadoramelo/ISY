@@ -4,11 +4,23 @@ function enviaformulario(evento){
 	console.log (evento.target);
 	console.log ("Cheguei na função");*/
 	let nome=document.getElementById("nome").value;
-	alert(nome);
+	if(!nome){
+		return;
+	}
 	let idade=document.getElementById("idade").value;
-	alert(idade);
+	if(!idade){
+		return;
+	}
 	let email=document.getElementById("email").value;
+	if(!email){
+		return;
+	}
+	let password=document.getElementById("password").value;
+	if(!password){
+		return;
+	}
+	alert(nome);
+	alert(idade);
 	alert(email);
-	let senha=document.getElementById("senha").value;
-	alert(senha);
+	alert(password);
 }
