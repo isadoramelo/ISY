@@ -1,49 +1,77 @@
-<meta charset="UTF-8">
-<title>ISY</title>
-<link rel="icon" type="imagem/png" href="img/icon.png" />
-<link href="css/style1.css" rel="stylesheet">
+<!DOCTYPE html>
+<html>
 
+<head>
 
-
-</div>
-<div id="box1">
-	<h1> ISY - I support you </h1>
-	<div class= "btn btn-outline-dark">
-
- 		<input type="button" id="botao" value="Home" onclick="window.location.href='index.html'">
-		<input type="button" id="botao" value="Conta" onclick="window.location.href='conta.html'">
-		<input type="button" id="botao" value="Depoimentos" onclick="window.location.href='depoimentos.html'">
-		<input type="button" id="botao" value="Leis e Direitos das Mulheres" onclick="window.location.href='mulheres.html'">
-		<input type="button" id="botao" value="Mapeamento" onclick="window.location.href='mapa.html'">
-		<input type="button" id="botao" value="Galeria" onclick="window.location.href='galeria.html'">
-		<input type="button" id="botao" value="Contato" onclick="window.location.href='#rodape'"> 
-		
-
-	</div>
-</div>
+	<meta charset="UTF-8">
+	<title>ISY</title>
+	<link rel="icon" type="imagem/png" href="img/icon.png"/>
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
 <body>
-	<div id="box2">
-		<h2> Sobre o site </h2>
+	<div class="titulo">
+		<p> ISY - I support you </p>
+	</div>
+	<nav class="navbar navbar-expand-lg navbar-light">
+		<a class="navbar-brand" href="#"><img src="img/icon.png" alt="icone do projeto ISY" class="icone"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+		aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav m r-auto">
+			<li class="nav-item active">
+				<a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="conta.html">Conta<span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="depoimentos.html">Depoimentos<span
+					class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="mulheres.html">Leis e Direitos das Mulheres<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="mapa.html">Mapeamento<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="galeria.html">Galeria<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="#rodape">Contato<span class="sr-only">(current)</span></a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<br>
+	<h2 class="subtitulo"> Sobre o site </h2>
 
-		<h3> O desenvolvimento desse site foi pensado baseando-se nos relatos de assédio sofrido por mulheres na sua convivência em sociedade,visando amenizar quaisquer problemas relacionados a todo tipo de assédio. Também com o intuito de proporcionar apoio umas as outras, apresentando um local onde podem se sentir confortável para ler e relatar seus depoimentos anonimamente ou não.
-		</h3>
-
-		<h3>É importante entender o assédio, entender onde e como se apresenta  e conhecer seus direitos como mulher, para que, se vier a passar por uma situação desagradável esteja ciente de seus respectivos direitos e compreenda que não estará sozinha.
-		</h3>
-		
-		<img src="img/sobre.jpg" id="imgm">
-		
-		<h3> O nosso site será usado como uma ferramenta a mais que vem para somar com projetos como o mete a colher(<a href="https://meteacolher.org/">https://meteacolher.org/</a>) ou até mesmo o papel desempenhado pela delegacia da mulher, para ser mais uma plataforma de colaboração na denúncia e no diálogo entre mulheres que enfrentam essas situações em diversos lugares e buscam um meio para relatar sobre o ocorrido e buscar ajuda psicológica e judiciária, que será disponibilizada na nossa plataforma profissionais destes ramos que se propuseram a participar desta iniciativa. </h3>
-		<h3> Nos baseamos em pesquisas realizadas com mulheres para validar a importância  de um ambiente adequado para relatarem suas experiências e seu convívio  social da forma mais segura e privada, e com base nas respostas adquiridas construímos nosso site. 
-		</h3>
+	<h3 class="texto_padrao"> O desenvolvimento desse site foi pensado baseando-se nos relatos de assédio sofrido por mulheres na sua convivência em sociedade,visando amenizar quaisquer problemas relacionados a todo tipo de assédio. Também com o intuito de proporcionar apoio umas as outras, apresentando um local onde podem se sentir confortável para ler e relatar seus depoimentos anonimamente ou não.
 		<br>
-	</div>
-<div id="rodape">
-		<h3> Contato </h3>
-		<a href="mailto:contatoisy.site@gmail.com"> 
-			<img src="img/email.svg" id="imge"> 
-			<p id="textoR">Envie um e-mail para ISY</p>
-		</a>
 
-	</div>
+		É importante entender o assédio, entender onde e como se apresenta  e conhecer seus direitos como mulher, para que, se vier a passar por uma situação desagradável esteja ciente de seus respectivos direitos e compreenda que não estará sozinha.
+	</h3>
+	<br>
+	
+	<img src="img/sobre.jpg" id="imgm">
+
+	<br>
+	<h3 class="texto_padrao"> O nosso site será usado como uma ferramenta a mais que vem para somar com projetos como o mete a colher(<a href="https://meteacolher.org/">https://meteacolher.org/</a>) ou até mesmo o papel desempenhado pela delegacia da mulher, para ser mais uma plataforma de colaboração na denúncia e no diálogo entre mulheres que enfrentam essas situações em diversos lugares e buscam um meio para relatar sobre o ocorrido e buscar ajuda psicológica e judiciária, que será disponibilizada na nossa plataforma profissionais destes ramos que se propuseram a participar desta iniciativa.
+		<br>
+		Nos baseamos em pesquisas realizadas com mulheres para validar a importância  de um ambiente adequado para relatarem suas experiências e seu convívio  social da forma mais segura e privada, e com base nas respostas adquiridas construímos nosso site. 
+	</h3>
+	<br>
+</div>
+<div id="rodape">
+	<h3 class="texto_contato"> Contato </h3>
+	<a href="mailto:contatoisy.site@gmail.com"> 
+		<img src="img/email.svg" id="imge"> 
+		<p id="textoR">Envie um e-mail para ISY</p>
+	</a>
+
+</div>
 </body>

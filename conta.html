@@ -1,17 +1,53 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <title>ISY</title>
   <link rel="icon" type="imagem/png" href="img/icon.png" />
-  <link href="css/style1.css" rel="stylesheet">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="scripts/script.js"> </script>
 </head>
+
 <body>
-  <div class = "container-fluid">
-    <div class = "titulo">
-      <p> ISY - I support you </p>
+  <div class="titulo">
+    <p> ISY - I support you </p>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light pb-4 mb-4">
+    <a class="navbar-brand" href="#"><img src="img/icon.png" alt="icone do projeto ISY" class="icone"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav m r-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="depoimentos.html">Depoimentos<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="mulheres.html">Leis e Direitos das Mulheres<span
+          class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="mapa.html">Mapeamento<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="galeria.html">Galeria<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#rodape">Contato<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="sobre.html">Sobre<span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
     </div>
+<<<<<<< HEAD
     <nav class="menu navbar navbar-expand-lg">
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
@@ -45,105 +81,53 @@
     </nav>
     <div class= "container-fluid"> 
       <div class="conta">
+=======
+    
+  </nav>
+  <div class="container-fluid">
+    <div class="conta">
+      <form onsubmit="enviaformulario(this)">
+>>>>>>> 4f31c18bd3bfbae67d57687f9a388f69c1431d19
         <div class="form-group">
-          <label for="exampleFormControlTextarea1">Nome</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          <label for="exampleFormControlSelect1">Idade</label>
-          <select class="form-control" id="exampleFormControlSelect1">
-            <option>14</option>
-            <option>15</option>
-            <option>16</option>
-            <option>17</option>
-            <option>18</option>
-            <option>19</option>
-            <option>20</option>
-            <option>21</option>
-            <option>22</option>
-            <option>23</option>
-            <option>24</option>
-            <option>25</option>
-            <option>26</option>
-            <option>27</option>
-            <option>28</option>
-            <option>29</option>
-            <option>30</option>
-            <option>31</option>
-            <option>32</option>
-            <option>33</option>
-            <option>34</option>
-            <option>35</option>
-            <option>36</option>
-            <option>37</option>
-            <option>38</option>
-            <option>39</option>
-            <option>40</option>
-            <option>41</option>
-            <option>42</option>
-            <option>43</option>
-            <option>44</option>
-            <option>45</option>
-            <option>46</option>
-            <option>47</option>
-            <option>48</option>
-            <option>49</option>
-            <option>50</option>
-            <option>51</option>
-            <option>52</option>
-            <option>53</option>
-            <option>54</option>
-            <option>55</option>
-            <option>56</option>
-            <option>57</option>
-            <option>58</option>
-            <option>59</option>
-            <option>60</option>
-            <option>61</option>
-            <option>62</option>
-            <option>63</option>
-            <option>64</option>
-            <option>65</option>
-            <option>66</option>
-            <option>67</option>
-            <option>68</option>
-            <option>69</option>
-            <option>70</option>
-            <option>71</option>
-            <option>72</option>
-            <option>73</option>
-            <option>74</option>
-            <option>75</option>
-            <option>76</option>
-            <option>77</option>
-            <option>78</option>
-            <option>79</option>
-            <option>80</option>
-
-          </select>
+          <label for="Nome">Nome</label>
+          <input type="text" class="form-control" id="nome"  placeholder="Digite seu nome" required>
         </div>
-        <label for="exampleInputEmail1">Endereço de email</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
-        <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
-      </div>
-      <div class="form-group">
-        <label for="exampleInputPassword1">Senha</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
-      </div>
-      <button type="submit" class="btn btn-primary">Enviar</button>
-    </form>
+        <div class="form-group">
+          <label for="idade">Idade</label>
+          <input type="number" class="form-control" id="idade" placeholder="Idade" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email"  placeholder="Digite seu email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Password" required>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
   </div>
-</div>
-</div>
 
 
-<div id="rodape">
-  <h3> Contato </h3>
-  <a href="mailto:contatoisy.site@gmail.com"> 
-    <img src="img/email.svg" id="imge"> 
-    <p id="textoR">Envie um e-mail para ISY</p>
-  </a>
+  <div id="rodape">
+    <h3> Contato </h3>
+    <a href="mailto:contatoisy.site@gmail.com">
+      <img src="img/email.svg" id="imge">
+      <p id="textoR">Envie um e-mail para ISY</p>
+    </a>
 
-</div>
-
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"></script>
 </body>
 
 </html>
