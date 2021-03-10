@@ -165,6 +165,7 @@ li {
   .conta {
     width: 60%;
     margin: 3px auto;
+    margin-bottom: 16px;
   }
 
   .conta label {
