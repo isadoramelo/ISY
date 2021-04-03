@@ -109,11 +109,21 @@ li {
     border-radius: 30px;
     background-color: #9D7C9A; 
   }
-
-
-  .nav-item .nav-link a:hover{
-    color: white;
-    
+  /* botão 2*/
+  .nav-item .nav-link.botao{
+    background-color: #bba2b9;
+    text-align: center;
+    font-size: 17px;
+    color: #fdf0fc !important;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #bba2b9 #747474 #747474 #bba2b9;
+    border-radius: 30px;
+    padding: 12px;
+    font-weight: 600;
+    margin-right: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   /* outros */
@@ -210,6 +220,6 @@ li {
     border: 2px solid #BBA2B9 !important;
   }
   .mapa{
-  width: 100%;
-  height: 480px;
-}
+    width: 100%;
+    height: 480px;
+  }

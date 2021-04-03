@@ -8,14 +8,14 @@
   <link href="css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
   integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  
-
+ 
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-auth.js"></script>
-  <script src="scripts/env.js"> </script>
+ <script src="scripts/env.js"> </script>
   <script src="scripts/script.js"> </script>
+
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
  https://firebase.google.com/docs/web/setup#available-libraries -->
@@ -62,15 +62,7 @@
   </nav>
   <div class="container-fluid">
     <div class="conta">
-      <form onsubmit="enviaformulario(this)">
-        <div class="form-group">
-          <label for="Nome">Nome</label>
-          <input type="text" class="form-control" id="nome"  placeholder="Digite seu nome" required>
-        </div>
-        <div class="form-group">
-          <label for="idade">Idade</label>
-          <input type="number" class="form-control" id="idade" placeholder="Idade" required>
-        </div>
+      <form onsubmit="autenticar(this)">
         <div class="form-group">
           <label for="email">Email</label>
           <input type="email" class="form-control" id="email"  placeholder="Digite seu email" required>
