@@ -9,14 +9,15 @@
 	<link href="css/style.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	 <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-auth.js"></script>
- <script src="scripts/env.js"> </script>
-  <script src="scripts/script.js"> </script>
+	<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-auth.js"></script>
+	<script src="scripts/env.js"> </script>
+	<script src="scripts/script.js"> </script>
+	<script src="scripts/carregadepoimentos.js"> </script>
 
 </head>
-<body>
+<body onload="carregaDepoimentos()">
 	<div class="titulo">
 		<p> ISY - I support you </p>
 	</div>
@@ -28,67 +29,73 @@
 	</button>
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		<ul class="navbar-nav m r-auto">
-			<li class="nav-item active">
+			<li class="nav-item">
 				<a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
 			</li>
-			<li class="nav-item active">
-				<a class="nav-link" href="conta.html">Conta<span class="sr-only">(current)</span></a>
+			<li class="nav-item ">
+				<a class="nav-link ativo" href="depoimentos.html">Depoimentos<span class="sr-only">(current)</span></a>
 			</li>
-			<li class="nav-item active">
+			<li class="nav-item ">
 				<a class="nav-link" href="mulheres.html">Leis e Direitos das Mulheres<span
 					class="sr-only">(current)</span></a>
 				</li>
-				<li class="nav-item active">
+				<li class="nav-item ">
 					<a class="nav-link" href="mapa.html">Mapeamento<span class="sr-only">(current)</span></a>
 				</li>
-				<li class="nav-item active">
+				<li class="nav-item ">
 					<a class="nav-link" href="galeria.html">Galeria<span class="sr-only">(current)</span></a>
 				</li>
-				<li class="nav-item active">
+				<li class="nav-item ">
 					<a class="nav-link" href="#rodape">Contato<span class="sr-only">(current)</span></a>
 				</li>
-				<li class="nav-item active">
+				<li class="nav-item ">
 					<a class="nav-link" href="sobre.html">Sobre<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item ">
+					<a class="nav-link" href="conta.html">Cadastrar<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item ">
+					<a class="nav-link" href="login.html">Login<span class="sr-only">(current)</span></a>
 				</li>
 			</ul>
 		</div>
-		
 	</nav>
+	<br>
+	<h2 class="subtitulo">Feed de depoimentos</h2>
 	<div class="container">
 		<div class="row">
 			<ul class="navbar-nav m r-auto">
 				<li class="nav-item active">
-					<a class="botao nav-link" href="conta.html">Cadastrar<span class="sr-only">(current)</span></a>
+					<a class="botao nav-link" href="conta.html">Publicar com conta<span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item active">
 					<a class="botao nav-link" href="depoimentos.html">Publicar anonimamente<span class="sr-only">(current)</span></a>
 				</li>
-				<li class="nav-item active">
-					<a class="botao nav-link" href="login.html">Login<span class="sr-only">(current)</span></a>
-				</li>
 			</ul>
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-10">
-      <form onsubmit="gravarDepoimento(this)">
+	<div class="container">
+		<div class="col-12">
+			<form onsubmit="gravarDepoimento(this)">
 				<div class="form-group">
-					<label for="exampleFormControlTextarea1">Exemplo de textarea</label>
+					<label for="exampleFormControlTextarea1">Publique aqui</label>
 					<textarea class="form-control" id="depoimento" rows="10"></textarea>
 				</div>
 				<button type="submit" class="btn btn-primary">Publicar</button>
 			</form>
 		</div>
 	</div>
+	<div class="col-12" id="depoimentos">
+		<h1>
+		</div>
+		<div id="rodape">
+			<h3 class="texto_contato"> Contato </h3>
+			<a href="mailto:contatoisy.site@gmail.com"> 
+				<img src="img/email.svg" id="imge"> 
+				<p id="textoR">Envie um e-mail para ISY</p>
+			</a>
 
-	<div id="rodape">
-		<h3 class="texto_contato"> Contato </h3>
-		<a href="mailto:contatoisy.site@gmail.com"> 
-			<img src="img/email.svg" id="imge"> 
-			<p id="textoR">Envie um e-mail para ISY</p>
-		</a>
+		</div>
 
 	</div>
-
-</div>
 
