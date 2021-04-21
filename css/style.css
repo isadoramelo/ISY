@@ -212,6 +212,7 @@ li {
   }
 
   .texto_padrao {
+    margin-top:4px;
     text-align: center;
     color: #747474;
     font-family: sans-serif;
@@ -233,4 +234,8 @@ li {
   .mapa{
     width: 100%;
     height: 480px;
+  }
+
+  .link{
+    color:#bba2b9;
   }
