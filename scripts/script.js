@@ -90,6 +90,7 @@ function gravarDepoimento(evento){
 	let db = firebase.firestore();
 	//var database = firebase.database();
 	db.collection("depoimentos").add({
+		id:contador +1,
 		depoimento: depoimento,
 	})
 	.then(function(docRef) {

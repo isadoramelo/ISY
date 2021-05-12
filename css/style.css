@@ -11,6 +11,9 @@ body {
 .icone{
   height: 60px;
 }
+.icone2{
+  height: 30px;
+}
 
 /* Titulo */
 
@@ -149,7 +152,12 @@ li {
     margin-right: auto;
     display: block;
   }
-
+  .imgs{
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
   #rodape {
     align-items: center;
     height: 120px;
@@ -196,16 +204,11 @@ li {
     background-color:#bba2b9;
     border: 0px;
   }
+  .btn-primary{
+    background-color:#bba2b9 !important;
+    border: 0px !important;
+  }
 
-/* .conta button {
-  margin: auto;
-  background-color: #bba2b9;
-  border-color: #bba2b9;
-  } */
-
-/* .conta button:hover {
-  background-color: #f3e2f4;
-  } */
 
   form-control {
     align-items: center;
@@ -237,5 +240,13 @@ li {
   }
 
   .link{
-    color:#bba2b9;
+    color:#a888a6;
+    font-weight: 700;
+  }
+  .link:hover{
+    color:#9D7C9A;
+  }
+  .card-title{
+    color:#9D7C9A;
+    font-weight: bold;
   }

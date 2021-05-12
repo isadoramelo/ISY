@@ -14,6 +14,7 @@ function carregaDepoimentos(){
 			var span = document.createElement('span');
 			var icon = document.createElement('i');
 			var linha = document.createElement('br');
+			contador++;
 
         //Add classes
         div.classList.add('container');
@@ -22,10 +23,12 @@ function carregaDepoimentos(){
         col2.classList.add('col-10');
         icon.classList.add('fas', 'fa-user-circle');
 
+        const hex = ((Math.random() * 0xffffff) << 0).toString(16);
+
         //Add style
         row.style.padding = '1rem 1rem';
         icon.style.fontSize = '36px';
-        icon.style.color = 'pink';
+        icon.style.color = `#${hex}`;
 
         col1.style.backgroundColor = 'white';
         col2.style.backgroundColor = '#DCDCDC';
@@ -45,6 +48,10 @@ function carregaDepoimentos(){
         col1.append(icon);
         col2.append(span);
         document.getElementById('depoimentos').appendChild(linha);
+        const image = document.createElement("img");
+        image.src = "img/icon2.png";
+        image.style.width = '30px';
+        document.getElementById('depoimentos').appendChild(image);
         //<div>
         //<row>
         //<col1>
@@ -56,6 +63,7 @@ function carregaDepoimentos(){
         //</row>
         //<div/>
         //<br>
+        console.log (contador);
     })
 	})
 }
