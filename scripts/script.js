@@ -92,6 +92,7 @@ function gravarDepoimento(evento){
 	db.collection("depoimentos").add({
 		id:contador +1,
 		depoimento: depoimento,
+		curtir: 0
 	})
 	.then(function(docRef) {
 		console.log("Depoimento armazenado com sucesso");
