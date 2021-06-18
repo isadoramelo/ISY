@@ -90,13 +90,14 @@ function gravarDepoimento(evento){
 	let db = firebase.firestore();
 	//var database = firebase.database();
 	db.collection("depoimentos").add({
-		id:contador +1,
 		depoimento: depoimento,
 		curtir: 0
 	})
 	.then(function(docRef) {
 		console.log("Depoimento armazenado com sucesso");
 		console.log("Depoimento armazenado com ID: ", docRef.id);
+		//Recarrega a página para exibir o novo depoimento.
+		document.location.reload(true);
 	})
 	.catch(function(error) {
 		console.error("Erro ao incluir o depoimento: ", error);

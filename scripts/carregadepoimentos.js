@@ -63,7 +63,7 @@ function carregaDepoimentos() {
         image.style.width = '30px';
         image.style.cursor = 'pointer';
         let id = doc.id;
-        image.setAttribute("onclick", `curtir(${id})`);
+        image.setAttribute("onclick", `curtir('${id}')`);
         col3.append(image);
         document.getElementById('depoimentos').appendChild(linha);
         //<div>
@@ -77,16 +77,32 @@ function carregaDepoimentos() {
         //</row>
         //<div/>
         //<br>
-        console.log(contador);
+        // console.log(contador);
       });
     });
 }
 
-function curtir(id){
-	let db = firebase.firestore();
-	const depoimento = db.collection('depoimentos').doc(id);
+function curtir(id) {
+  let db = firebase.firestore();
+  let docRef = db.collection("depoimentos").doc(id);
 
-console.log(depoimento);
-console.log("cheguei na função curtir");
- depoimento.update({curtir: curtir +1});
+  //Rebeca agora parece que está funcionando. 
+  /* Deixa eu explicar o que está acontecendo aqui. Primeiro eu faço a leitura do 
+  número de curtir que o depoimento já teve. Depois eu somo um nesse valor e somente após isso armazeno novamente no banco. 
+  Agora cada depoimento, no banco de dados, tem o número de curtidas.
+  Seria legal vocẽ tentar colocar esse número na tela agora. 
+  */
+  docRef.get().then((doc) => {
+    if (doc.exists) {
+      let curtir = doc.data().curtir + 1;
+       // Atualizar curtir
+      db.collection("depoimentos").doc(id).update({ curtir: curtir });
+    } else {
+      console.log("Depoimento não encontrado!");
+    }
+  }).catch((error) => {
+    console.log("Erro para recuperar os dados do banco de dados:", error);
+  });
+
+
 }

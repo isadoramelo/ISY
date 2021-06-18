@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 
 <head>
 
 	<meta charset="UTF-8">
 	<title>ISY</title>
-	<link rel="icon" type="imagem/png" href="img/icon.png"/>
+	<link rel="icon" type="imagem/png" href="img/icon.png" />
 	<link href="css/style.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/solid.css" integrity="sha384-LA8Ug4T/nhVkyhrSmSirsoAo9iDrBk8E7U80aSPeD+w3vO8PzOJIS6agGcbIwwX0" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/fontawesome.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">	<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/solid.css"
+		integrity="sha384-LA8Ug4T/nhVkyhrSmSirsoAo9iDrBk8E7U80aSPeD+w3vO8PzOJIS6agGcbIwwX0" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/fontawesome.css"
+		integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+	<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-auth.js"></script>
 	<script src="scripts/env.js"> </script>
@@ -18,6 +21,7 @@
 	<script src="scripts/carregadepoimentos.js"> </script>
 
 </head>
+
 <body onload="carregaDepoimentos()">
 	<div class="titulo">
 		<p> ISY - I support you </p>
@@ -25,20 +29,21 @@
 	<nav class="navbar navbar-expand-lg navbar-light">
 		<a class="navbar-brand" href="#"><img src="img/icon.png" alt="icone do projeto ISY" class="icone"></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-		aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		<ul class="navbar-nav m r-auto">
-			<li class="nav-item">
-				<a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-			</li>
-			<li class="nav-item ">
-				<a class="nav-link ativo" href="depoimentos.html">Depoimentos<span class="sr-only">(current)</span></a>
-			</li>
-			<li class="nav-item ">
-				<a class="nav-link" href="mulheres.html">Leis e Direitos das Mulheres<span
-					class="sr-only">(current)</span></a>
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav m r-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item ">
+					<a class="nav-link ativo" href="depoimentos.html">Depoimentos<span
+							class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item ">
+					<a class="nav-link" href="mulheres.html">Leis e Direitos das Mulheres<span
+							class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item ">
 					<a class="nav-link" href="mapa.html">Mapeamento<span class="sr-only">(current)</span></a>
@@ -67,10 +72,12 @@
 		<div class="row">
 			<ul class="navbar-nav m r-auto">
 				<li class="nav-item active">
-					<a class="botao nav-link" href="login.html">Publicar com conta<span class="sr-only">(current)</span></a>
+					<a class="botao nav-link" href="login.html">Publicar com conta<span
+							class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item active">
-					<a class="botao nav-link" href="depoimentos.html">Publicar anonimamente<span class="sr-only">(current)</span></a>
+					<a class="botao nav-link" href="depoimentos.html">Publicar anonimamente<span
+							class="sr-only">(current)</span></a>
 				</li>
 			</ul>
 		</div>
@@ -79,27 +86,26 @@
 		<div class="col-12">
 			<form onsubmit="gravarDepoimento(this)">
 				<div class="form-group">
-					<label for="exampleFormControlTextarea1">Publique aqui</label>
+					<label>Publique aqui</label>
 					<textarea class="form-control" id="depoimento" rows="10"></textarea>
 				</div>
 				<button type="submit" class="btn btn-primary">Publicar</button>
 			</form>
 		</div>
-		<div id="depoimentos"> 
+		<div id="depoimentos">
 		</div>
 	</div>
 	<button onclick="curtir(1);" class="btn btn-primary">Publicar</button>
 	<div class="col-12">
-		<h1>
-		</div>
-		<div id="rodape">
-			<h3 class="texto_contato"> Contato </h3>
-			<a href="mailto:contatoisy.site@gmail.com"> 
-				<img src="img/email.svg" id="imge"> 
-				<p id="textoR">Envie um e-mail para ISY</p>
-			</a>
-
-		</div>
+		.
+	</div>
+	<div id="rodape">
+		<h3 class="texto_contato"> Contato </h3>
+		<a href="mailto:contatoisy.site@gmail.com">
+			<img src="img/email.svg" id="imge" alt="logo de e-mail">
+			<p id="textoR">Envie um e-mail para ISY</p>
+		</a>
 
 	</div>
 
+	</div>
