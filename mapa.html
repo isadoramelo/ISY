@@ -9,10 +9,14 @@
 	<link href="css/style.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<script src="scripts/script.js"> </script>
 </head>
-<body>
+<body onload="exibeNome()">
 	<div class="titulo">
 		<p> ISY - I support you </p>
+		<spam> Olá, </spam>
+		<spam id="nome"></spam>
 	</div>
 	<nav class="navbar navbar-expand-lg navbar-light">
 		<a class="navbar-brand" href="#"><img src="img/icon.png" alt="icone do projeto ISY" class="icone"></a>
@@ -52,22 +56,22 @@
 				</li>
 			</ul>
 		</div>
-			
-		</nav>
+		
+	</nav>
 
-		<div class="container my-3">
-			<div class= "mapa d-flex justify-content-center">
-				<iframe src="https://www.google.com/maps/d/u/1/embed?mid=1lCBbNcY2sfhhTl_-KG21c5fic0TgmwhS" width="640" height="480"></iframe>
-
-			</div>
-		</div>
-		<div id="rodape">
-			<h3 class="texto_contato"> Contato </h3>
-			<a href="mailto:contatoisy.site@gmail.com"> 
-				<img src="img/email.svg" id="imge"> 
-				<p id="textoR">Envie um e-mail para ISY</p>
-			</a>
+	<div class="container my-3">
+		<div class= "mapa d-flex justify-content-center">
+			<iframe src="https://www.google.com/maps/d/u/1/embed?mid=1lCBbNcY2sfhhTl_-KG21c5fic0TgmwhS" width="640" height="480"></iframe>
 
 		</div>
+	</div>
+	<div id="rodape">
+		<h3 class="texto_contato"> Contato </h3>
+		<a href="mailto:contatoisy.site@gmail.com"> 
+			<img src="img/email.svg" id="imge"> 
+			<p id="textoR">Envie um e-mail para ISY</p>
+		</a>
 
 	</div>
+
+</div>

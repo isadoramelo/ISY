@@ -25,16 +25,22 @@ function enviaformulario(evento){
 	console.log(email);
 	console.log(password);
 	
-  firebase.auth().createUserWithEmailAndPassword(email, password)
-  .then((user) => {
-    console.log("Usuário criado com sucesso");
-  })
-  .catch((error) => {
-    var errorCode = error.code;
-    var errorMessage = error.message;
-    console.log(errorMessage);
-    console.log("Erro ao criar usuário");
-  });
+	firebase.auth().createUserWithEmailAndPassword(email, password)
+	.then((user) => {
+		console.log("Usuário criado com sucesso");
+		let userlogged = firebase.auth().currentUser;
+		userlogged.updateProfile({
+			displayName: nome
+		});
+		userlogged = firebase.auth().currentUser;
+		console.log (userlogged.displayName);
+	})
+		.catch((error) => {
+			var errorCode = error.code;
+			var errorMessage = error.message;
+			console.log(errorMessage);
+			console.log("Erro ao criar usuário");
+		});
   /*let db = firebase.firestore();
 	//var database = firebase.database();
 	db.collection("usuarios").add({
@@ -62,24 +68,27 @@ function autenticar(evento){
 	if(!password){
 		return;
 	}
-	console.log(email);
-	console.log(password);
+	//console.log(email);
+	//console.log(password);
 	
-  firebase.auth().signInWithEmailAndPassword(email, password)
-  .then(function(){
-    console.log("Usuário logado com sucesso");
-    let user = firebase.auth().currentUser;
-    console.log(user);
-    /*document.getElementById("message").innerText = "Usuário autenticado com sucesso.";*/
-  })
-  .catch(function(error) {
-    console.log("Usuário não autenticado!");
-    var errorCode = error.code;
-    var errorMessage = error.message;
-   /* document.getElementById("errorMessage").innerText = errorMessage;*/
+	firebase.auth().signInWithEmailAndPassword(email, password)
+	.then(function(){
+		console.log("Usuário logado com sucesso");
+		let user = firebase.auth().currentUser;
+		//console.log(user);
+		//console.log(user.displayName);
+		localStorage.setItem('nome', user.displayName)
+		exibeNome();
+		/*document.getElementById("message").innerText = "Usuário autenticado com sucesso.";*/
+	})
+	.catch(function(error) {
+		console.log("Usuário não autenticado!");
+		var errorCode = error.code;
+		var errorMessage = error.message;
+		/* document.getElementById("errorMessage").innerText = errorMessage;*/
 
-}
-)
+	}
+	)
 }
 function gravarDepoimento(evento){
 	event.preventDefault();
@@ -102,4 +111,11 @@ function gravarDepoimento(evento){
 	.catch(function(error) {
 		console.error("Erro ao incluir o depoimento: ", error);
 	});
+}
+function exibeNome(){
+	let nome = localStorage.getItem('nome');
+	console.log (nome);
+	if (nome){
+		document.getElementById("nome").innerText=nome;
+	}
 }
