@@ -23,10 +23,9 @@
 
 </head>
 
-<body onload="exibeNome()">
+<body onload="iniciaAplicacao();">
   <div class="titulo">
     <p> ISY - I support you </p>
-    <spam> Olá, </spam>
     <spam id="nome"></spam>
   </div>
   <nav class="navbar navbar-expand-lg navbar-light pb-4 mb-4">
@@ -62,8 +61,11 @@
         <li class="nav-item ">
           <a class="nav-link" href="conta.html">Cadastrar<span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item ">
+        <li class="nav-item" id="login" style="display: none;">
           <a class="nav-link ativo" href="login.html">Login<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item" id="logout" style="display: none;">
+          <a class="nav-link ativo" onclick="logout();">Logout<span class="sr-only">(current)</span></a>
         </li>
       </ul>
     </div>
