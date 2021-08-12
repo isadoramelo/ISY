@@ -145,7 +145,7 @@ function iniciaAplicacao() {
 	if (nomeUsuaria) {
 		document.getElementById('login').style.display = "none";
 		document.getElementById('logout').style.display = "inline-block";
-		const stringParaExibir = 'Olá ' + nomeUsuaria;
+		const stringParaExibir = 'Olá, ' + nomeUsuaria;
 		document.getElementById('nome').innerText = stringParaExibir;
 	} else{
 		document.getElementById('logout').style.display = "none";
