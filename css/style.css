@@ -82,8 +82,6 @@ li {
 }
 
 .navbar-toggler-icon{
-  color: red;
-  background-color: cornflowerblue;
   z-index: 1000;
 }
 
