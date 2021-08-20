@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="UTF-8">
-	<title>ISY</title>
-	<link rel="icon" type="imagem/png" href="img/icon.png"/>
-	<link href="css/style.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+		crossorigin="anonymous"></script>
 
+
+	<link href="css/style.css" rel="stylesheet">
 	<script src="scripts/script.js"> </script>
+
+	<title>ISY</title>
+	<link rel="icon" type="imagem/png" href="img/icon.png" />
+
 </head>
 
 <body onload="iniciaAplicacao();">
@@ -19,20 +33,20 @@
 	<nav class="navbar navbar-expand-lg navbar-light">
 		<a class="navbar-brand" href="#"><img src="img/icon.png" alt="icone do projeto ISY" class="icone"></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-		aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		<ul class="navbar-nav m r-auto">
-			<li class="nav-item ">
-				<a class="nav-link ativo" href="index.html">Home<span class="sr-only">(current)</span></a>
-			</li>
-			<li class="nav-item ">
-				<a class="nav-link" href="depoimentos.html">Depoimentos<span class="sr-only">(current)</span></a>
-			</li>
-			<li class="nav-item ">
-				<a class="nav-link" href="mulheres.html">Leis e Direitos das Mulheres<span
-					class="sr-only">(current)</span></a>
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav m r-auto">
+				<li class="nav-item ">
+					<a class="nav-link ativo" href="index.html">Home<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item ">
+					<a class="nav-link" href="depoimentos.html">Depoimentos<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item ">
+					<a class="nav-link" href="mulheres.html">Leis e Direitos das Mulheres<span
+							class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item ">
 					<a class="nav-link" href="mapa.html">Mapeamento<span class="sr-only">(current)</span></a>
@@ -57,27 +71,33 @@
 				</li>
 			</ul>
 		</div>
-		
+
 	</nav>
 	<div class="container">
 		<div class="row">
-			<h3 class="texto_padrao">Venha interagir com outras mulheres através do nosso <a class= "link" href = "depoimentos.html">feed de depoimentos</a> conhecendo e compartilhando experiências! </h3>
-			<video controls class="video"> 
-				<source src="video/isy1.mp4" type="video/mp4"/>
-			</video>
+			<h3 class="texto_padrao">Venha interagir com outras mulheres através do nosso <a class="link"
+					href="depoimentos.html"><span>de depoimentos</span></a>
+				conhecendo e compartilhando experiências!
+			</h3>
+
+			<div class="embed-responsive embed-responsive-16by9">
+				<iframe class="embed-responsive-item" src="video/isy1.mp4" allowfullscreen></iframe>
+			</div>
+
 			<br>
-			<h3 class="texto_padrao">Nossa plataforma foi criada pensando na convivência das mulheres na sociedade, buscando amenizar  problemas relacionados ao assédio, promovendo apoio umas as outras  em um local onde possam se sentir confortáveis para conversar.
-			O site será usado na colaboração da denúncia e no diálogo entre mulheres que buscam ajuda. </h3>
+			<h3 class="texto_padrao">Nossa plataforma foi criada pensando na convivência das mulheres na sociedade,
+				buscando amenizar problemas relacionados ao assédio, promovendo apoio umas as outras em um local onde
+				possam se sentir confortáveis para conversar.
+				O site será usado na colaboração da denúncia e no diálogo entre mulheres que buscam ajuda. </h3>
 			<br>
 		</div>
 	</div>
 	<div id="rodape">
 		<h3 class="texto_contato"> Contato </h3>
-		<a href="mailto:contatoisy.site@gmail.com"> 
-			<img src="img/email.svg" id="imge"> 
+		<a href="mailto:contatoisy.site@gmail.com">
+			<img src="img/email.svg" id="imge">
 			<p id="textoR">Envie um e-mail para ISY</p>
 		</a>
 
 	</div>
-
 </body>
