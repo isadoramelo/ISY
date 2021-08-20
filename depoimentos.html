@@ -23,10 +23,10 @@
 
 </head>
 
-<body onload="carregaDepoimentos(), iniciaAplicação()">
+<body onload="carregaDepoimentos(), iniciaAplicacao()">
 	<div class="titulo">
 		<p> ISY - I support you </p>
-		<spam id="nome"></spam>
+		<span id="nome"></span>
 	</div>
 	<nav class="navbar navbar-expand-lg navbar-light">
 		<a class="navbar-brand" href="#"><img src="img/icon.png" alt="icone do projeto ISY" class="icone"></a>
@@ -62,51 +62,55 @@
 					<li class="nav-item ">
 						<a class="nav-link" href="conta.html">Cadastrar<span class="sr-only">(current)</span></a>
 					</li>
-					<li class="nav-item ">
-						<a class="nav-link" href="login.html">Login<span class="sr-only">(current)</span></a>
+					<li class="nav-item" id="login" style="display: none;">
+						<a class="nav-link ativo" href="login.html">Login<span class="sr-only">(current)</span></a>
 					</li>
-				</ul>
-			</div>
-		</nav>
-		<br>
-		<h2 class="subtitulo">Feed de depoimentos</h2>
-		<div class="container">
-			<div class="row">
-				<ul class="navbar-nav m r-auto">
+					<li class="nav-item" id="logout" style="display: none;">
+						<a class="nav-link ativo" onclick="logout();">Logout<span class="sr-only">(current)</span></a>
+					</li>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<br>
+	<h2 class="subtitulo">Feed de depoimentos</h2>
+	<div class="container">
+		<div class="row">
+			<ul class="navbar-nav m r-auto">
+				<li class="nav-item active">
+					<a class="botao nav-link" href="login.html">Publicar com conta<span
+						class="sr-only">(current)</span></a>
+					</li>
 					<li class="nav-item active">
-						<a class="botao nav-link" href="login.html">Publicar com conta<span
+						<a class="botao nav-link" href="depoimentos.html">Publicar anonimamente<span
 							class="sr-only">(current)</span></a>
 						</li>
-						<li class="nav-item active">
-							<a class="botao nav-link" href="depoimentos.html">Publicar anonimamente<span
-								class="sr-only">(current)</span></a>
-							</li>
-						</ul>
-					</div>
+					</ul>
 				</div>
-				<div class="container">
-					<div class="col-12">
-						<form onsubmit="gravarDepoimento(this)">
-							<div class="form-group">
-								<label>Publique aqui</label>
-								<textarea class="form-control" id="depoimento" rows="10"></textarea>
-							</div>
-							<button type="submit" class="btn btn-primary">Publicar</button>
-						</form>
-					</div>
-					<div id="depoimentos">
-					</div>
+			</div>
+			<div class="container">
+				<div class="col-12">
+					<form onsubmit="gravarDepoimento(this)">
+						<div class="form-group">
+							<label>Publique aqui</label>
+							<textarea class="form-control" id="depoimento" rows="10"></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary">Publicar</button>
+					</form>
 				</div>
-
-				.
+				<div id="depoimentos">
+				</div>
 			</div>
-			<div id="rodape">
-				<h3 class="texto_contato"> Contato </h3>
-				<a href="mailto:contatoisy.site@gmail.com">
-					<img src="img/email.svg" id="imge" alt="logo de e-mail">
-					<p id="textoR">Envie um e-mail para ISY</p>
-				</a>
 
-			</div>
+			.
+		</div>
+		<div id="rodape">
+			<h3 class="texto_contato"> Contato </h3>
+			<a href="mailto:contatoisy.site@gmail.com">
+				<img src="img/email.svg" id="imge" alt="logo de e-mail">
+				<p id="textoR">Envie um e-mail para ISY</p>
+			</a>
 
 		</div>
+
+	</div>

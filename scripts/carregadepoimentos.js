@@ -18,6 +18,7 @@ function carregaDepoimentos() {
         var icon = document.createElement('i');
         var linha = document.createElement('br');
         let likes = document.createElement('span');
+        var nome = document.createElement('p');
         contador++;
 
         //Add classes
@@ -37,7 +38,7 @@ function carregaDepoimentos() {
         likes.style.fontSize = '12px';
         likes.style.fontWeight = '600';
         likes.id = `likes${doc.data().depoimento}`; // criando id especial em cada span do like para atualizar na hora q o usuário curtir
-
+        nome.style.fontSize = '0.8rem';
         col1.style.backgroundColor = 'white';
         col2.style.backgroundColor = '#DCDCDC';
         col1.style.border = '1px transparent';
@@ -52,7 +53,9 @@ function carregaDepoimentos() {
         col3.style.padding = '0.5rem';
 
         var text = document.createTextNode(doc.data().depoimento);
+        var nomeUsuaria = document.createTextNode(doc.data().user);
         span.appendChild(text);
+        nome.appendChild(nomeUsuaria);
 
         document.getElementById('depoimentos').appendChild(div);
         div.append(row);
@@ -60,6 +63,7 @@ function carregaDepoimentos() {
         row.append(col2);
         row.append(col3);
         col1.append(icon);
+        col1.append(nome);
         col2.append(span);
 
         const image = document.createElement('img');
