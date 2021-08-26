@@ -7,8 +7,8 @@ function carregaDepoimentos() {
   .then(querySnapshot => {
   	querySnapshot.forEach(doc => {
         // console.log(`${doc.id} => ${doc.data()}`);
-        console.log(doc.data());
-        console.log(doc.data().depoimento);
+        // console.log(doc.data());
+        // console.log(doc.data().depoimento);
         var div = document.createElement('div');
         var row = document.createElement('div');
         var col1 = document.createElement('div');
@@ -22,10 +22,10 @@ function carregaDepoimentos() {
         contador++;
 
         //Add classes
-        div.classList.add('container');
+        // div.classList.add('container');
         row.classList.add('row');
-        col1.classList.add('col-2', 'text-center');
-        col2.classList.add('col-9');
+        col1.classList.add('col-3', 'text-center');
+        col2.classList.add('col-8');
         col3.classList.add('col-1', 'text-center');
         icon.classList.add('fas', 'fa-user-circle');
 
@@ -57,6 +57,8 @@ function carregaDepoimentos() {
         span.appendChild(text);
         nome.appendChild(nomeUsuaria);
 
+        console.log(div);
+
         document.getElementById('depoimentos').appendChild(div);
         div.append(row);
         row.append(col1);
@@ -76,6 +78,9 @@ function carregaDepoimentos() {
         likes.append(doc.data().curtir);
         col3.append(image);
         col3.append(likes);
+
+        console.log(linha);
+
         document.getElementById('depoimentos').appendChild(linha);
         //<div>
         //<row>
